@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "YuGothic", sans-serif;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1, h2 {
+  font-family: "Montserrat";
+}
+
+.wrapper {
+  max-width: 1004px;
+  margin: 0 auto;
+}
+
+.big-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 27px 0 40px;
+}
+
+.logo {
+  color: #FFFFFF;
+}
+.logo h1 {
+  font-size: 20px;
+  margin: 36px 0 0 0;
+}
+.logo p {
+  font-size: 12px;
+  margin: 6px 0 0 0;
+}
+
+.main-nav {
+  display: flex;
+  margin-top: 28px;
+}
+.main-nav li {
+  margin-left: 63px;
+}
+.main-nav a {
+  color: #000000;
+}
+
+.home-content {
+  margin-top: 278px;
+}
+.home-content h1 {
+  font-size: 64px;
+  margin: 0;
+  line-height: 1.25;
+}
+.home-content p {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 18px 0 0 0;
+}
+
+#home {
+  background-image: url(img/makekit.jpg);
+  height: 806px;
+}
+
+.shop-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 186px;
+}
+
+.concept {
+  width: 418px;
+  padding: 77px 56px 50px 57px;
+  background: #F0F0F0;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+}
+.concept h1 {
+  font-size: 48px;
+  margin: 0 0 27px 0;
+}
+.concept h2 {
+  font-size: 24px;
+  margin: 36px 0 12px 0;
+}
+.concept p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.item-content {
+  margin-top: 134px;
+}
+.item-content h1 {
+  font-size: 48px;
+  margin: 0 0 25px 0;
+}
+.item-content p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.makeitems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.makeitem {
+  width: 324px;
+  margin-top: 21px;
+}
+.makeitem img {
+  margin-bottom: 20px;
+}
+.makeitem h2 {
+  margin: 33px 0 15px 0;
+  font-size: 24px;
+}
+.makeitem p {
+  font-size: 16px;
+}
+
+.price-content {
+  margin-top: 204px;
+  position: relative;
+  height: 977px;
+}
+.price-content img {
+  position: absolute;
+  top: 93px;
+  right: 0;
+  z-index: -1;
+}
+
+.price {
+  width: 494px;
+  box-sizing: border-box;
+  border: 5px solid #A38787;
+  text-align: center;
+  padding: 55px 0 67.4px 0;
+  background: rgba(255, 255, 255, .8);
+}
+.price h1 {
+  margin: 0 0 38px 0;
+  font-size: 48px;
+}
+.price p {
+  margin: 0 0 79px 0;
+  font-size: 16px;
+}
+
+
+.price-table {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 324px;
+  font-size: 16px;
+  border-collapse: collapse;
+}
+.price-table th {
+  text-align: left;
+}
+.price-table td {
+  text-align: right;
+  font-weight: bold;
+}
+.price-table tr {
+  border-bottom: 1px dashed #707070;
+  height: 46px;
+}
+.price-table tr:last-child{
+  border-bottom: none;
+}
+
+.blog-content {
+  margin-top: 283px;
+}
+.blog-content h1{
+  margin: 0 0 38px 0;
+  font-size: 48px;
+}
+.blog-content p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.blogs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.blog {
+  width: 324px;
+  font-size: 16px;
+}
+.blog h2 {
+  font-size: 16px;
+  margin: 29px 0 7px 0;
+}
+.blog p {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.access-content {
+  margin-top: 188px;
+}
+.access-content h1 {
+  margin: 0 0 50px 0;
+  font-size: 48px;
+}
+.access-content p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.access-info {
+  margin-top: 98px;
+  margin-bottom: 147px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.access-detail h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+.access-detail p {
+  margin-bottom: 27px;
+  font-size: 16px;
+}
+
+.way {
+  width: 751px;
+  margin: 0 auto;
+}
+.way h2 {
+  margin: 0 0 28px 0;
+  font-size: 24px;
+  font-family: "YuGothic";
+}
+.way p {
+  font-size: 16px;
+}
+
+footer {
+  background: #262626;
+  text-align: center;
+  height: 264px;
+  padding-top: 77px;
+  margin-top: 219px;
+  box-sizing: border-box;
+}
+footer h1 {
+  margin: 0;
+  font-size: 80px;
+  color: #FFFFFF;
+}
