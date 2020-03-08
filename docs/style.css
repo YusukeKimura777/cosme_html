@@ -4,7 +4,7 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: "YuGothic", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000000;
   padding: 0;
   margin: 0;
@@ -15,11 +15,8 @@ img {
 a {
   text-decoration: none;
 }
-ul {
+ul, ol {
   list-style: none;
-}
-h1, h2 {
-  font-family: "Montserrat";
 }
 
 .wrapper {
@@ -40,12 +37,15 @@ header {
 
 .logo {
   color: #FFFFFF;
+  font-weight: bold;
 }
-.logo h1 {
-  font-size: 20px;
+.logo dl {
   margin: 36px 0 0 0;
 }
-.logo p {
+.logo dt {
+  font-size: 20px;
+}
+.logo dd {
   font-size: 12px;
   margin: 6px 0 0 0;
 }
@@ -56,6 +56,10 @@ header {
 }
 .main-nav li {
   margin-left: 63px;
+  padding-bottom: 4px
+}
+.main-nav li:hover {
+  border-bottom: 8px solid #000000;
 }
 .main-nav a {
   color: #000000;
@@ -66,13 +70,12 @@ header {
 }
 .home-content h1 {
   font-size: 64px;
-  margin: 0;
+  margin: 0 0 18px 0;
   line-height: 1.25;
 }
-.home-content p {
+.home-content strong {
   font-size: 24px;
   color: #FFFFFF;
-  margin: 18px 0 0 0;
 }
 
 #home {
@@ -94,61 +97,94 @@ header {
   border: 1px solid #707070;
   box-sizing: border-box;
 }
-.concept h1 {
-  font-size: 48px;
-  margin: 0 0 27px 0;
-}
 .concept h2 {
+  font-size: 48px;
+  margin: 0 0 12px 0;
+}
+.concept h2:after{
+  content: '';
+  display: block;
+  background: #0A0A0A;
+  width: 69px;
+  height: 5px;
+  margin-top: 10px;
+}
+.concept strong {
+  font-size: 16px;
+}
+.concept dl {
+  margin: 0;
+}
+.concept dt {
   font-size: 24px;
+  font-weight: bold;
   margin: 36px 0 12px 0;
 }
-.concept p {
+.concept dd {
   margin: 0;
   font-size: 16px;
+}
+
+.model {
+  margin: 0;
 }
 
 .item-content {
   margin-top: 134px;
 }
-.item-content h1 {
+.item-content h2 {
   font-size: 48px;
-  margin: 0 0 25px 0;
+  margin: 0 0 12px 0;
 }
-.item-content p {
+.item-content h2:after {
+  content: '';
+  display: block;
+  background: #0A0A0A;
+  width: 69px;
+  height: 5px;
+  margin-top: 8px;
+}
+.item-content strong {
   font-size: 16px;
-  margin: 0;
 }
 
 .makeitems {
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  margin-top: 21px;
 }
 
 .makeitem {
   width: 324px;
-  margin-top: 21px;
+  margin: 0;
 }
-.makeitem img {
-  margin-bottom: 20px;
+.makeitem figcaption {
+  margin-top: 20px;
 }
-.makeitem h2 {
-  margin: 33px 0 15px 0;
-  font-size: 24px;
-}
-.makeitem p {
+.makeitem strong {
   font-size: 16px;
+}
+.makeitem dl {
+  margin: 33px 0 0 0;
+}
+.makeitem dt {
+  font-size: 24px;
+  font-weight: bold;
+}
+.makeitem dd {
+  font-size: 16px;
+  margin: 15px 0 0 0;
+}
+
+.eyeshadow dd {
+  text-align: center;
 }
 
 .price-content {
   margin-top: 204px;
   position: relative;
   height: 977px;
-}
-.price-content img {
-  position: absolute;
-  top: 93px;
-  right: 0;
-  z-index: -1;
 }
 
 .price {
@@ -159,11 +195,19 @@ header {
   padding: 55px 0 67.4px 0;
   background: rgba(255, 255, 255, .8);
 }
-.price h1 {
-  margin: 0 0 38px 0;
+.price h2 {
+  margin: 0 0 15px 0;
   font-size: 48px;
 }
-.price p {
+.price h2:after {
+  content: '';
+  display: block;
+  background: #0A0A0A;
+  width: 69px;
+  height: 5px;
+  margin: 18px auto 0 auto;
+}
+.price strong {
   margin: 0 0 79px 0;
   font-size: 16px;
 }
@@ -171,7 +215,7 @@ header {
 
 .price-table {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 79px auto 0 auto;
   width: 324px;
   font-size: 16px;
   border-collapse: collapse;
@@ -191,15 +235,30 @@ header {
   border-bottom: none;
 }
 
+.production {
+  position: absolute;
+  top: 93px;
+  right: 0;
+  z-index: -1;
+  margin: 0;
+}
+
 .blog-content {
   margin-top: 283px;
 }
-.blog-content h1{
-  margin: 0 0 38px 0;
+.blog-content h2{
+  margin: 0 0 21px 0;
   font-size: 48px;
 }
-.blog-content p {
-  margin: 0;
+.blog-content h2:after {
+  content: '';
+  display: block;
+  background: #0A0A0A;
+  width: 69px;
+  height: 5px;
+  margin-top: 12px;
+}
+.blog-content strong {
   font-size: 16px;
 }
 
@@ -207,30 +266,42 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  padding: 0;
 }
 
 .blog {
   width: 324px;
   font-size: 16px;
+  margin: 0;
 }
-.blog h2 {
+.blog figcaption {
+  margin-top: 29px;
+}
+.blog time {
   font-size: 16px;
-  margin: 29px 0 7px 0;
+  font-weight: bold;
 }
 .blog p {
   font-size: 16px;
-  margin-left: 5px;
+  margin: 7px 0 0 5px;
 }
 
 .access-content {
   margin-top: 188px;
 }
-.access-content h1 {
-  margin: 0 0 50px 0;
+.access-content h2 {
+  margin: 0 0 21px 0;
   font-size: 48px;
 }
-.access-content p {
-  margin: 0;
+.access-content h2:after {
+  content: '';
+  display: block;
+  background: #0A0A0A;
+  width: 69px;
+  height: 5px;
+  margin-top: 24px;
+}
+.access-content strong {
   font-size: 16px;
 }
 
@@ -241,12 +312,16 @@ header {
   justify-content: space-between;
 }
 
-.access-detail h2 {
-  margin: 0 0 10px 0;
-  font-size: 24px;
+.access-detail dl {
+  margin: 0;
 }
-.access-detail p {
-  margin-bottom: 27px;
+.access-detail dt {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.access-detail dd {
+  margin: 0 0 27px 0;
   font-size: 16px;
 }
 
@@ -254,13 +329,17 @@ header {
   width: 751px;
   margin: 0 auto;
 }
-.way h2 {
+.way h3 {
   margin: 0 0 28px 0;
   font-size: 24px;
-  font-family: "YuGothic";
 }
-.way p {
-  font-size: 16px;
+
+.way-desc {
+  margin: 0;
+  padding: 0;
+}
+.way-desc li {
+  margin-bottom: 16px;
 }
 
 footer {
@@ -271,8 +350,9 @@ footer {
   margin-top: 219px;
   box-sizing: border-box;
 }
-footer h1 {
+footer p {
   margin: 0;
   font-size: 80px;
   color: #FFFFFF;
+  font-weight: bold;
 }

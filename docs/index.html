@@ -5,15 +5,19 @@
     <title>cosme</title>
     <meta name="description" content="コスメについて">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div id="home" class="big-bg">
       <header>
         <div class="logo">
-          <h1>LogoLOGO</h1>
-          <P style="font-weight: bold;">コスメです。</P>
+          <dl>
+            <dt>LogoLOGO</dt>
+            <dd>コスメです。</dd>
+          </dl>
         </div>
+
         <nav>
           <ul class="main-nav">
             <li><a href="#about">About</a></li>
@@ -25,138 +29,180 @@
         </nav>
       </header>
   
-      <div class="home-content wrapper">
+      <section class="home-content wrapper">
         <h1>Awesome<br>Cosmetic</h1>
-        <p style="font-weight: bold;">コスメのセレクトショップのサイトです。</p>
-      </div>
+        <strong>コスメのセレクトショップのサイトです。</strong>
+      </section>
     </div>
 
-    <div id="about" class="shop-content wrapper">
-      <article class="concept">
-        <h1>About</h1>
-        <p style="font-weight: bold;">私たちについて</p>
-        <h2>お店のコンセプト</h2>
-        <p>コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。</p>
-      </article>
+    <article id="about" class="shop-content wrapper">
+      <section class="concept">
+        <h2>About</h2>
+        <strong>私たちについて</strong>
+        <dl>
+          <dt>お店のコンセプト</dt>
+          <dd>コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。コンセプトについての説明。</dd>
+        </dl>
+      </section>
 
-      <aside>
+      <figure class="model">
         <img src="img/model.jpg" alt="モデル">
-      </aside>
-    </div>
+      </figure>
+    </article>
 
-    <div class="item-content wrapper">
-      <h1>Item</h1>
-      <p style="font-weight: bold;">アイテム</p>
+    <article class="item-content wrapper">
+      <h2>Item</h2>
+      <strong>アイテム</strong>
 
-      <div class="makeitems">
-        <div class="makeitem">
-          <img src="img/makeitem.jpg" alt="メイクアイテム">
-          <p style="font-weight: bold; font-family: Montserrat;">ファンデーション</p>
-          <h2>商品名</h2>
-          <p>この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。</p>
-        </div>
-        <div class="makeitem">
-          <img src="img/makeitem.jpg" alt="メイクアイテム">
-          <p style="font-weight: bold; font-family: Montserrat;">リップ</p>
-          <h2>コスメ2コスメ2コスメ2コスメ2コスメ2</h2>
-          <p>商品について商品について商品について商品について商品について商品について</p>
-        </div>
-        <div class="makeitem">
-          <img src="img/makeitem.jpg" alt="メイクアイテム">
-          <p style="font-weight: bold; font-family: Montserrat;">アイシャドー</p>
-          <h2>コスメ3コスメ3コスメ3コスメ3</h2>
-          <p style="text-align: center;">真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中</p>
-        </div>
-      </div>
-    </div>
+      <ul class="makeitems">
+        <li>
+          <figure class="makeitem">
+            <img src="img/makeitem.jpg" alt="メイクアイテム">
+            <figcaption>
+              <strong>ファンデーション</strong>
+              <dl>
+                <dt>商品名</dt>
+                <dd>この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。この商品の説明。</dd>
+              </dl>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="makeitem">
+            <img src="img/makeitem.jpg" alt="メイクアイテム">
+            <figcaption>
+              <strong>リップ</strong>
+              <dl>
+                <dt>コスメ2コスメ2コスメ2コスメ2コスメ2</dt>
+                <dd>商品について商品について商品について商品について商品について商品について</dd>
+              </dl>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="makeitem eyeshadow">
+            <img src="img/makeitem.jpg" alt="メイクアイテム">
+            <figcaption>
+              <strong>アイシャドー</strong>
+              <dl>
+                <dt>コスメ3コスメ3コスメ3コスメ3</dt>
+                <dd>真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中真ん中</dd>
+              </dl>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </article>
 
-    <div class="price-content wrapper">
-      <div class="price">
-        <h1>Price</h1>
-        <p style="font-weight: bold;">料金表</p>
+    <article class="price-content wrapper">
+      <section class="price">
+        <h2>Price</h2>
+        <strong>料金表</strong>
         <table class="price-table">
           <tr>
             <th>アイライナー</th>
-            <td>\3,000</td>
+            <td>&yen;3,000</td>
           </tr>
           <tr>
             <th>リップ</th>
-            <td>\3,000</td>
+            <td>&yen;3,000</td>
           </tr>
           <tr>
             <th>グロス</th>
-            <td>\3,000</td>
+            <td>&yen;3,000</td>
           </tr>
           <tr>
             <th>シャドウ</th>
-            <td>\3,000</td>
+            <td>&yen;3,000</td>
           </tr>
           <tr>
             <th>マニキュア</th>
-            <td>\3,000</td>
+            <td>&yen;3,000</td>
           </tr>
         </table>
-      </div>
-      <img src="img/production.jpg" alt="商品">
-    </div>
+      </section>
+      <figure class="production">
+        <img src="img/production.jpg" alt="商品">
+      </figure>
+    </article>
 
-    <div id="blog" class="blog-content wrapper">
-      <h1>Blog</h1>
-      <p style="font-weight: bold;">ブログ</p>
+    <article id="blog" class="blog-content wrapper">
+      <h2>Blog</h2>
+      <strong>ブログ</strong>
 
-      <div class="blogs">
-        <div class="blog">
-          <img src="img/jan_bussiness_day.jpg" alt="1月の営業日ご案内">
-          <h2>2019/12/3</h2>
-          <p>1月の営業日ご案内。</p>
-        </div>
-        <div class="blog">
-          <img src="img/dec_bussiness_day.jpg" alt="12月の営業日ご案内">
-          <h2>2019/11/2</h2>
-          <p>12月の営業日ご案内。</p>
-        </div>
-        <div class="blog">
-          <img src="img/make_start.jpg" alt="メイク始めました">
-          <h2>2019/11/2</h2>
-          <p>メイク始めました。</p>
-        </div>
-      </div>
-    </div>
+      <ul class="blogs">
+        <li>
+          <figure class="blog">
+            <img src="img/jan_bussiness_day.jpg" alt="1月の営業日ご案内">
+            <figcaption>
+              <time datetime="2019-12-3">2019/12/3</time>
+              <p>1月の営業日ご案内。</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="blog">
+            <img src="img/dec_bussiness_day.jpg" alt="12月の営業日ご案内">
+            <figcaption>
+              <time datetime="2019-11-2">2019/11/2</time>
+              <p>12月の営業日ご案内。</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="blog">
+            <img src="img/make_start.jpg" alt="メイク始めました">
+            <figcaption>
+              <time datetime="2019-11-2">2019/11/2</time>
+              <p>メイク始めました。</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </article>
 
-    <div id="access" class="access-content wrapper">
-      <h1>Access</h1>
-      <p style="font-weight: bold;">アクセス</p>
+    <article id="access" class="access-content wrapper">
+      <h2>Access</h2>
+      <strong>アクセス</strong>
 
-      <div class="access-info">
-        <div class="access-detail">
-            <h2>ADRESS</h2>
-            <p>大阪市北区芝田一丁目</p>
-            <h2>TELL</h2>
-            <p>000-0000-0000</p>
-            <h2>ON TIME</h2>
-            <p>平日</p>
-            <h2>OFF TIME</h2>
-            <p>土曜日曜祝日</p>
-        </div>
+      <section class="access-info">
+        <section class="access-detail">
+          <dl>
+            <dt>ADRESS</dt>
+            <dd>大阪市北区芝田一丁目</dd>
+            <dt>TELL</dt>
+            <dd>000-0000-0000</dd>
+            <dt>ON TIME</dt>
+            <dd>平日</dd>
+            <dt>OFF TIME</dt>
+            <dd>土曜日曜祝日</dd>
+          </dl>
+        </section>
 
-        <div class="access-map">
+        <aside class="access-map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9491302360116!2d135.495573865331!3d34.70646298043296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e691c5c21a61%3A0x426587edd82ea9dc!2z44CSNTMwLTAwMTIg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy66Iqd55Sw77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1583336539293!5m2!1sja!2sjp" width="664" height="421" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
+        </aside>
+      </section>
       
 
-      <div class="way">
-        <h2>道順の説明</h2>
-        <p>①行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明<br><br>
-
-        ②行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明<br><br>
-          
-        ③行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明</p>
-      </div>
-    </div>
+      <section class="way">
+        <h3>道順の説明</h3>
+        <ol class="way-desc">
+          <li>
+            ①行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+          </li>
+          <li>
+            ②行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+          </li>
+          <li>
+            ③行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行　　き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明行き方の説明
+          </li>
+        </ol>
+      </section>
+    </article>
 
     <footer>
-      <h1>LOGOLOGo</h1>
+      <p>LOGOLOGo</p>
     </footer>
   </body>
 </html>
