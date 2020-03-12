@@ -192,7 +192,7 @@ header {
   box-sizing: border-box;
   border: 5px solid #A38787;
   text-align: center;
-  padding: 55px 0 67.4px 0;
+  padding: 55px 85px 67.4px 85px;
   background: rgba(255, 255, 255, .8);
 }
 .price h2 {
@@ -212,11 +212,9 @@ header {
   font-size: 16px;
 }
 
-
 .price-table {
   width: 100%;
-  margin: 79px auto 0 auto;
-  width: 324px;
+  margin-top: 79px;
   font-size: 16px;
   border-collapse: collapse;
 }
@@ -246,7 +244,7 @@ header {
 .blog-content {
   margin-top: 283px;
 }
-.blog-content h2{
+.blog-content h2 {
   margin: 0 0 21px 0;
   font-size: 48px;
 }
