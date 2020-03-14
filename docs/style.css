@@ -69,7 +69,7 @@ header {
 }
 .main-nav li {
   margin-left: 63px;
-  padding-bottom: 4px
+  padding-bottom: 4px;
 }
 .main-nav li:hover {
   border-bottom: 8px solid #000000;
