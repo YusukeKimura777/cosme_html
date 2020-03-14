@@ -24,6 +24,13 @@ ul, ol {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .wrapper {
+    width: auto;
+    padding: 0 15px 0 15px;
+  }
+}
+
 .big-bg {
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,6 +40,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 27px 0 40px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-left: 21px;
+  }
 }
 
 .logo {
@@ -65,6 +78,18 @@ header {
   color: #000000;
 }
 
+@media (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .iphone {
+    display: none;
+  }
+}
+
 .home-content {
   margin-top: 278px;
 }
@@ -78,9 +103,30 @@ header {
   color: #FFFFFF;
 }
 
+@media (max-width: 600px) {
+  .home-content {
+    margin-top: 179px;
+    margin-left: 26px;
+  }
+  .home-content h1 {
+    font-size: 40px;
+  }
+  .home-content strong {
+    font-size: 16px;
+    display: block;
+    width: 201px;
+  }
+}
+
 #home {
   background-image: url(img/makekit.jpg);
   height: 806px;
+}
+
+@media (max-width: 600px) {
+  #home {
+    height: 100vh;
+  }
 }
 
 .shop-content {
@@ -88,6 +134,13 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 186px;
+}
+
+@media (max-width: 600px) {
+  .shop-content {
+    flex-direction: column;
+    margin-top: 103px;
+  }
 }
 
 .concept {
@@ -125,6 +178,29 @@ header {
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  .concept {
+    width: auto;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+  .concept h2 {
+    font-size: 38px;
+  }
+  .concept strong {
+    font-size: 12px;
+  }
+  .concept dt {
+    font-size: 20px;
+    margin-top: 29px;
+  }
+  .concept dd {
+    font-size: 12px;
+    margin-bottom: 34px;
+  }
+}
+
 .model {
   margin: 0;
 }
@@ -148,15 +224,38 @@ header {
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  .item-content {
+    margin-top: 127.7px;
+  }
+  .item-content h2 {
+    font-size: 38px;
+  }
+  .item-content strong {
+    font-size: 12px;
+  }
+}
+
 .makeitems {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin-top: 21px;
 }
+.makeitems li {
+  width: 324px;
+}
+
+@media (max-width: 600px) {
+  .makeitems {
+    flex-direction: column;
+  }
+  .makeitems li {
+    width: auto;
+  }
+}
 
 .makeitem {
-  width: 324px;
   margin: 0;
 }
 .makeitem figcaption {
@@ -177,6 +276,27 @@ header {
   margin: 15px 0 0 0;
 }
 
+@media (max-width: 600px) {
+  .makeitem {
+    margin-bottom: 35px;
+  }
+  .makeitem img {
+    width: 100%;
+  }
+  .makeitem figcaption {
+    margin-top: 16px;
+  }
+  .makeitem strong {
+    font-size: 12px;
+  }
+  .makeitem dl {
+    margin-top: 13px;
+  }
+  .makeitem dd {
+    font-size: 12px;
+  }
+}
+
 .eyeshadow dd {
   text-align: center;
 }
@@ -185,6 +305,13 @@ header {
   margin-top: 204px;
   position: relative;
   height: 977px;
+}
+
+@media (max-width: 600px) {
+  .price-content {
+    margin-top: 110px;
+    height: 602px;
+  }
 }
 
 .price {
@@ -212,6 +339,20 @@ header {
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  .price {
+    width: auto;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+  .price h2 {
+    font-size: 38px;
+  }
+  .price strong {
+    font-size: 12px;
+  }
+}
+
 .price-table {
   width: 100%;
   margin-top: 79px;
@@ -233,12 +374,28 @@ header {
   border-bottom: none;
 }
 
+@media (max-width: 600px) {
+  .price-table {
+    font-size: 12px;
+  }
+}
+
 .production {
   position: absolute;
   top: 93px;
   right: 0;
   z-index: -1;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .production {
+    top: -48px;
+    left: 0px;
+  }
+  .production img {
+    height: 646px;
+  }
 }
 
 .blog-content {
@@ -260,15 +417,39 @@ header {
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  .blog-content {
+    margin-top: 101px;
+  }
+  .blog-content h2 {
+    font-size: 38px;
+  }
+  .blog-content strong {
+    font-size: 12px;
+  }
+}
+
 .blogs {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
   padding: 0;
 }
+.blogs li {
+  width: 324px;
+}
+
+@media (max-width: 600px) {
+  .blogs {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .blogs li{
+    width: 48%;
+  }
+}
 
 .blog {
-  width: 324px;
   font-size: 16px;
   margin: 0;
 }
@@ -282,6 +463,22 @@ header {
 .blog p {
   font-size: 16px;
   margin: 7px 0 0 5px;
+}
+
+@media (max-width: 600px) {
+  .blog img {
+    width: 100%;
+  }
+  .blog figcaption {
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+  .blog time {
+    font-size: 12px;
+  }
+  .blog p {
+    font-size: 12px;
+  }
 }
 
 .access-content {
@@ -303,11 +500,34 @@ header {
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  .access-content {
+    margin-top: 112px;
+  }
+  .access-content h2 {
+    font-size: 38px;
+  }
+  .access-content h2:after {
+    margin-top: 12px;
+  }
+  .access-content strong {
+    font-size: 12px;
+  }
+}
+
 .access-info {
   margin-top: 98px;
   margin-bottom: 147px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .access-info {
+    margin-top: 42px;
+    margin-bottom: 32px;
+    flex-direction: column;
+  }
 }
 
 .access-detail dl {
@@ -323,6 +543,21 @@ header {
   font-size: 16px;
 }
 
+@media (max-width: 600px) {
+  .access-detail dt {
+    font-size: 18px;
+  }
+  .access-detail dd {
+    font-size: 12px;
+  }
+
+  .access-map iframe {
+    width: 100%;
+    height: 218px;
+    margin-top: 4px;
+  }
+}
+
 .way {
   width: 751px;
   margin: 0 auto;
@@ -332,12 +567,30 @@ header {
   font-size: 24px;
 }
 
+@media (max-width: 600px) {
+  .way {
+    width: auto;
+  }
+  .way h3 {
+    font-size: 24px;
+  }
+}
+
 .way-desc {
   margin: 0;
   padding: 0;
 }
 .way-desc li {
   margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .way-desc {
+    font-size: 12px;
+  }
+  .way-desc li {
+    margin-bottom: 12px;
+  }
 }
 
 footer {
@@ -353,4 +606,15 @@ footer p {
   font-size: 80px;
   color: #FFFFFF;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  footer {
+    height: 182px;
+    padding-top: 70px;
+    margin-top: 125px;
+  }
+  footer p {
+    font-size: 40px;
+  }
 }
