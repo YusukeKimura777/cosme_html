@@ -116,7 +116,7 @@ header {
 
 @media (max-width: 600px) {
   .home-content {
-    margin-top: 179px;
+    margin-top: 47.73333vw;
     margin-left: 26px;
   }
   .home-content h1 {
@@ -150,7 +150,7 @@ header {
 @media (max-width: 600px) {
   .shop-content {
     flex-direction: column;
-    margin-top: 103px;
+    margin-top: 27.46667vw;
   }
 }
 
@@ -246,7 +246,7 @@ header {
 
 @media (max-width: 600px) {
   .item-content {
-    margin-top: 127.7px;
+    margin-top: 34.13333vw;
   }
   .item-content h2 {
     font-size: 38px;
@@ -335,8 +335,8 @@ header {
 
 @media (max-width: 600px) {
   .price-content {
-    margin-top: 110px;
-    height: 602px;
+    margin-top: 29.33333vw;
+    height: 160.53333vw;
   }
 }
 
@@ -452,7 +452,7 @@ header {
 
 @media (max-width: 600px) {
   .blog-content {
-    margin-top: 101px;
+    margin-top: 26.93333vw;
   }
   .blog-content h2 {
     font-size: 38px;
@@ -542,7 +542,7 @@ header {
 
 @media (max-width: 600px) {
   .access-content {
-    margin-top: 112px;
+    margin-top: 29.86667vw;
   }
   .access-content h2 {
     font-size: 38px;
@@ -597,7 +597,7 @@ header {
 @media (max-width: 600px) {
   .access-map iframe {
     width: 100%;
-    height: 218px;
+    height: 58.13333vw;
     margin-top: 4px;
   }
 }
@@ -654,9 +654,9 @@ footer p {
 
 @media (max-width: 600px) {
   footer {
-    height: 182px;
-    padding-top: 70px;
-    margin-top: 125px;
+    height: 48.53333vw;
+    padding-top: 18.66667vw;
+    margin-top: 33.33333vw;
   }
   footer p {
     font-size: 40px;
